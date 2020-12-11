@@ -26,6 +26,28 @@ Visų pirma programa sugeneruoja 1000 skirtingų studentų duomenų ir juos sur�
 Taigi pradedant skaidyti iš pradžių sukuriami failai `gudručiai_v` ir `vargseliai_v` tai reiškia, kad faile yra naudojami vektoriai ir rūšiavimo būdas yra pirmasis, kai turime vieną bendra failą `rezultatai` ir iš jo perkeliame studentus į `gudručiai` arba `vargšeliai` failus ir galiausiai turime 3 failus su studentais. Toks pats rūšiavimo būdas tik su listais yra failuose `gudruciai_l` ir `vargseliai_l`. Vėliau kuriami failai `vargseliai_vektorius` ir `gudruciai_vektorius` yra rūšiuojami vektoriai pagal antąjį būdą, kai paimamas bendras failas `rezultatai` ir atrinkus visus studentus, kurių galutinis pažymys mažesnis už 5 ir sudėjus į failą iš bendro failo jie yra išrinami ir bendras failas tiesiog tampa nauju failu kuriame yra tik tie studentai, kurių galutinis rezultatas didesnis arba lygus 5. Tas pats rūšiavimo būdas tik su listais yra `vargseliai_list` ir `gudručiai_list` failuose tik naudojant listus, o ne vektorius.
 Programos veikimo spartą galima pasižiūrėti atitinkamų dalių realeas'uose.
 
+CPU Intel(R) Core(TM) i3-6100U CPU @ 2.30GHz
+RAM 4.00 GB
+SSD 264GB
+
+Programa skaičiuoja kiek laiko trunka tam tikros funkcijos. Paleidus Run
+
+|1 strategija vektorius	|1 strategija listas	|2 strategija vektorius	|2 strategija listas|
+|----------------------|---------------------|-----------------------|---------------------------|
+|1000 dydžio failas|	0.0029952|	0.0009982|	0.0009977|	0.0009974|
+|10000 dydžio failas|	0.0099705|	0.0099758|	0.0089787|	0.0060106|
+|100000 dydžio failas|	0.107711|	0.0987361|	0.108112|	0.0717757|
+|1000000 dydžio failas|	1.36796|	0.940186|	1.23005|	0.726541|
+
+Programa skaičiuoja kiek laiko trunka tam tikros funkcijos. Paleidus Debug
+
+|1 strategija vektorius	|1 strategija listas	|2 strategija vektorius|	2 strategija listas|
+|-----------------------|---------------------|------------------------|-------------------------|
+|1000 dydžio failas|	0.0069522|	0.0019949|	0.0039917|	0.0239039|
+|10000 dydžio failas|	0.975389|	0.0240433|	0.105512|	0.58096|
+|100000 dydžio failas|	0.247875|	0.235368|	0,645892|	0,486957|
+|1000000 dydžio failas|	2.72944|	2.26807|	3.75137|	3.52349|
+
 **N,** ***kai programa nuskaitys studentų failus***
 
 Viską ką programa padarys tai išves studento vardą, pavardę nuskaityta iš failo `kursiokai.txt` ir taip pat pasiėmusi iš to paties failo studentų namų darbų pažymius ir egzamino pažymi, kaip ir studentų įvedimo atveju, apskaičiuos galutinį pažymi ir medianą bei išves šiuos skaičius į ekraną.
